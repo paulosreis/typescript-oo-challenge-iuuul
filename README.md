@@ -27,9 +27,7 @@ src/
 │   ├── Conta.ts
 │   ├── ContaCorrente.ts
 │   └── ContaPoupanca.ts
-├── utils/           # Utilitários auxiliares (se necessário)
 ├── main.ts          # Arquivo principal com cenários de teste
-dist/                # Arquivos compilados em JavaScript
 ```
 
 ## 🚀 Como Executar
@@ -47,12 +45,16 @@ cd <nome-do-repositório>
 ```bash
 npm install
 ```
-3. Compile o código TypeScript para JavaScript:
+
+3. Compile o código TypeScript para JavaScript. Isso criará a pasta `dist`, onde os arquivos JavaScript gerados serão armazenados:
+
 
 ```bash
 npx tsc
 ```
-4. Execute o arquivo principal:
+
+4. Execute o arquivo principal a partir da pasta `dist`:
+
 
 ```bash
 node dist/main.js
